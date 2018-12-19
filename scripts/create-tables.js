@@ -16,6 +16,7 @@ client.query(`
     user_name VARCHAR(256) NOT NULL,
     profile_id INTEGER NOT NULL REFERENCES profile(id)
   );
+  
 `)
   .then(
     () => console.log('create tables complete'),

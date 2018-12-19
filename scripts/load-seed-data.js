@@ -3,19 +3,19 @@ const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
 const favorites = [
-  { streamer: 'ninja', profile_id: 1 },
-  { streamer: 'shroud', profile_id: 1 },
-  { streamer: 'ZeRo', profile_id: 2 },
-  { streamer: 'mistermv', profile_id: 2 },
-  { streamer: 'shroud', profile_id: 2 },
-  { streamer: 'kevin', profile_id: 2 },
-  { streamer: 'jukes', profile_id: 2 },
-  { streamer: 'summit1g', profile_id: 2 },
-  { streamer: 'sodapoppin', profile_id: 2 },
-  { streamer: 'robi', profile_id: 2 },
-  { streamer: 'mang0', profile_id: 2 },
-  { streamer: 'hexy', profile_id: 2 },
-  { streamer: 'tyler1', profile_id: 1 }
+  { user_name: 'ninja', profile_id: 1 },
+  { user_name: 'shroud', profile_id: 1 },
+  { user_name: 'ZeRo', profile_id: 2 },
+  { user_name: 'mistermv', profile_id: 2 },
+  { user_name: 'shroud', profile_id: 2 },
+  { user_name: 'kevin', profile_id: 2 },
+  { user_name: 'jukes', profile_id: 2 },
+  { user_name: 'summit1g', profile_id: 2 },
+  { user_name: 'sodapoppin', profile_id: 2 },
+  { user_name: 'robi', profile_id: 2 },
+  { user_name: 'mang0', profile_id: 2 },
+  { user_name: 'hexy', profile_id: 2 },
+  { user_name: 'tyler1', profile_id: 1 }
 ];
 const profiles = [
   { username: 'kristinhortsch', 
@@ -52,10 +52,10 @@ Promise.all(
     return Promise.all(
       favorites.map(favorite => {
         return client.query(`
-          INSERT INTO favorite (streamer, profile_id)
+          INSERT INTO favorite (user_name, profile_id)
           VALUES ($1, $2);             
         `,
-        [favorite.streamer, favorite.profile_id])
+        [favorite.user_name, favorite.profile_id])
           .then(result => result.rows[0]);
       })
     );

@@ -3,22 +3,22 @@ const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
 const favorites = [
-  { user_name: 'ninja', profile_id: 1 },
-  { user_name: 'shroud', profile_id: 1 },
-  { user_name: 'ZeRo', profile_id: 2 },
-  { user_name: 'mistermv', profile_id: 2 },
-  { user_name: 'shroud', profile_id: 2 },
-  { user_name: 'kevin', profile_id: 2 },
-  { user_name: 'jukes', profile_id: 2 },
-  { user_name: 'summit1g', profile_id: 2 },
-  { user_name: 'sodapoppin', profile_id: 2 },
-  { user_name: 'robi', profile_id: 2 },
-  { user_name: 'mang0', profile_id: 2 },
-  { user_name: 'hexy', profile_id: 2 },
-  { user_name: 'tyler1', profile_id: 1 },
-  { user_name: 'zilula2', profile_id: 1 },
-  { user_name: 'zilula2', profile_id: 2 },
-  { user_name: 'zilula2', profile_id: 3 }
+  { userName: 'ninja', profileId: 1 },
+  { userName: 'shroud', profileId: 1 },
+  { userName: 'ZeRo', profileId: 2 },
+  { userName: 'mistermv', profileId: 2 },
+  { userName: 'shroud', profileId: 2 },
+  { userName: 'kevin', profileId: 2 },
+  { userName: 'jukes', profileId: 2 },
+  { userName: 'summit1g', profileId: 2 },
+  { userName: 'sodapoppin', profileId: 2 },
+  { userName: 'robi', profileId: 2 },
+  { userName: 'mang0', profileId: 2 },
+  { userName: 'hexy', profileId: 2 },
+  { userName: 'tyler1', profileId: 1 },
+  { userName: 'zilula2', profileId: 1 },
+  { userName: 'zilula2', profileId: 2 },
+  { userName: 'zilula2', profileId: 3 }
 ];
 const profiles = [
   { username: 'kristinhortsch', 

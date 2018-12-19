@@ -15,7 +15,10 @@ const favorites = [
   { user_name: 'robi', profile_id: 2 },
   { user_name: 'mang0', profile_id: 2 },
   { user_name: 'hexy', profile_id: 2 },
-  { user_name: 'tyler1', profile_id: 1 }
+  { user_name: 'tyler1', profile_id: 1 },
+  { user_name: 'zilula2', profile_id: 1 },
+  { user_name: 'zilula2', profile_id: 2 },
+  { user_name: 'zilula2', profile_id: 3 }
 ];
 const profiles = [
   { username: 'kristinhortsch', 

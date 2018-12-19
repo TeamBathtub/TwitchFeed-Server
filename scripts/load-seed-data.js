@@ -5,7 +5,16 @@ const bcrypt = require('bcryptjs');
 const favorites = [
   { streamer: 'ninja', profile_id: 1 },
   { streamer: 'shroud', profile_id: 1 },
+  { streamer: 'ZeRo', profile_id: 2 },
+  { streamer: 'mistermv', profile_id: 2 },
   { streamer: 'shroud', profile_id: 2 },
+  { streamer: 'kevin', profile_id: 2 },
+  { streamer: 'jukes', profile_id: 2 },
+  { streamer: 'summit1g', profile_id: 2 },
+  { streamer: 'sodapoppin', profile_id: 2 },
+  { streamer: 'robi', profile_id: 2 },
+  { streamer: 'mang0', profile_id: 2 },
+  { streamer: 'hexy', profile_id: 2 },
   { streamer: 'tyler1', profile_id: 1 }
 ];
 const profiles = [

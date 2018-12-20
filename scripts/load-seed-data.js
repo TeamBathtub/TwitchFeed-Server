@@ -3,22 +3,22 @@ const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
 const favorites = [
-  { userName: 'ninja', profileId: 1 },
-  { userName: 'shroud', profileId: 1 },
-  { userName: 'ZeRo', profileId: 2 },
-  { userName: 'mistermv', profileId: 2 },
-  { userName: 'shroud', profileId: 2 },
-  { userName: 'kevin', profileId: 2 },
-  { userName: 'jukes', profileId: 2 },
-  { userName: 'summit1g', profileId: 2 },
-  { userName: 'sodapoppin', profileId: 2 },
-  { userName: 'robi', profileId: 2 },
-  { userName: 'mang0', profileId: 2 },
-  { userName: 'hexy', profileId: 2 },
-  { userName: 'tyler1', profileId: 1 },
-  { userName: 'zilula2', profileId: 1 },
-  { userName: 'zilula2', profileId: 2 },
-  { userName: 'zilula2', profileId: 3 }
+  { user_name: 'ninja', profile_id: 1 },
+  { user_name: 'shroud', profile_id: 1 },
+  { user_name: 'ZeRo', profile_id: 2 },
+  { user_name: 'mistermv', profile_id: 2 },
+  { user_name: 'shroud', profile_id: 2 },
+  { user_name: 'kevin', profile_id: 2 },
+  { user_name: 'jukes', profile_id: 2 },
+  { user_name: 'summit1g', profile_id: 2 },
+  { user_name: 'sodapoppin', profile_id: 2 },
+  { user_name: 'robi', profile_id: 2 },
+  { user_name: 'mang0', profile_id: 2 },
+  { user_name: 'hexy', profile_id: 2 },
+  { user_name: 'tyler1', profile_id: 1 },
+  { user_name: 'zilula2', profile_id: 1 },
+  { user_name: 'zilula2', profile_id: 2 },
+  { user_name: 'zilula2', profile_id: 3 }
 ];
 const profiles = [
   { username: 'kristinhortsch', 
@@ -37,6 +37,44 @@ const profiles = [
     firstName: 'tyler', 
     email: 'tylercorbett@gmail.com', 
     hash: bcrypt.hashSync('abc', 8)
+  }
+];
+const ratings = [
+  {
+    user_name: 'ninja', 
+    score: 5
+  },
+  {
+    user_name: 'timthetatman', 
+    score: 3
+  },
+  {
+    user_name: 'shroud', 
+    score: 4
+  },
+  {
+    user_name: 'tyler1', 
+    score: 2
+  },
+  {
+    user_name: 'lirik', 
+    score: 4
+  },
+  {
+    user_name: 'yogscast', 
+    score: 3
+  },
+  {
+    user_name: 'dakotaz', 
+    score: 1
+  },
+  {
+    user_name: 'tfue', 
+    score: 5
+  },
+  {
+    user_name: 'dakotaz', 
+    score: 1
   }
 ];
 
@@ -63,6 +101,19 @@ Promise.all(
       })
     );
   })
+  .then(
+    () => {
+      return Promise.all(
+        ratings.map(rating => {
+          return client.query(`
+            INSERT INTO rating (user_name, score)
+            VALUES ($1, $2);
+          `,
+          [rating.user_name, rating.score])
+            .then(result => result.rows[0]);
+        })
+      );
+    })
   .then(
     () => console.log('seed data load complete'),
     err => console.log(err)

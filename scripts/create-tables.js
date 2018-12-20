@@ -17,6 +17,11 @@ client.query(`
     profile_id INTEGER NOT NULL REFERENCES profile(id)
   );
   
+  CREATE TABLE IF NOT EXISTS rating (
+    id SERIAL PRIMARY KEY,
+    user_name VARCHAR(256) NOT NULL,
+    score INTEGER NOT NULL
+  );
 `)
   .then(
     () => console.log('create tables complete'),

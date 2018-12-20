@@ -19,6 +19,7 @@ const favorites = [
   { user_name: 'timthetatman', profile_id: 1 },
   { user_name: 'sodapoppin', profile_id: 1 },
   { user_name: 'DrDisrespect', profile_id: 1 },
+  { user_name: 'littlesiha', profile_id: 1 },
   { user_name: 'zeRo', profile_id: 1 },
   { user_name: 'cloakzy', profile_id: 1 },
   { user_name: 'DisguisedToast', profile_id: 1 },

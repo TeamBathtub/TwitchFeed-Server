@@ -58,40 +58,160 @@ const profiles = [
 ];
 const ratings = [
   {
-    user_name: 'ninja', 
-    score: 5
+    user_name: '72hrs', 
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
-    user_name: 'timthetatman', 
-    score: 3
+    user_name: '72hrs', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'scump', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'scump', 
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'shroud', 
-    score: 4
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'shroud', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: '72hrs', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'DisguisedToast', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'DisguisedToast', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'livekiss', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'MooonsterCasino', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'MooonsterCasino', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'TimTheTatman', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'TimTheTatman', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'TimTheTatman', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'ninja', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'timthetatman', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'shroud', 
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'tyler1', 
-    score: 2
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'lirik', 
-    score: 4
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'yogscast', 
-    score: 3
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'dakotaz', 
-    score: 1
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
     user_name: 'tfue', 
-    score: 5
+    score: Math.floor((Math.random() * 5) + 1)
   },
   {
-    user_name: 'dakotaz', 
-    score: 1
+    user_name: 'TimTheTatman', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'scump', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'scump', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'shroud', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'sodapoppin', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'summit1g', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'jukes', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'jukes', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'jukes', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'xQcOW', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'ZeRo', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'ZeRo', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'ZeRo', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'ZeRo', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'CouRageJD', 
+    score: Math.floor((Math.random() * 5) + 1)
+  },
+  {
+    user_name: 'CouRageJD', 
+    score: Math.floor((Math.random() * 5) + 1)
   }
 ];
 

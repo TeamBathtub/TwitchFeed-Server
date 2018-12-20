@@ -58,6 +58,13 @@ const profiles = [
 ];
 const ratings = [
   {
+    user_name: 'Ninja', 
+    score: 5
+  },
+  {
+    user_name: 'TimTheTatman', 
+    score: 3
+  },
     user_name: '72hrs', 
     score: Math.floor((Math.random() * 5) + 1)
   },
@@ -130,15 +137,15 @@ const ratings = [
     score: Math.floor((Math.random() * 5) + 1)
   },
   {
+    user_name: 'LIRIK', 
+    score: 4
+  },
+  {
+    user_name: 'Yogscast', 
+    score: 3
+  },
+  {
     user_name: 'tyler1', 
-    score: Math.floor((Math.random() * 5) + 1)
-  },
-  {
-    user_name: 'lirik', 
-    score: Math.floor((Math.random() * 5) + 1)
-  },
-  {
-    user_name: 'yogscast', 
     score: Math.floor((Math.random() * 5) + 1)
   },
   {
@@ -146,8 +153,8 @@ const ratings = [
     score: Math.floor((Math.random() * 5) + 1)
   },
   {
-    user_name: 'tfue', 
-    score: Math.floor((Math.random() * 5) + 1)
+    user_name: 'Tfue', 
+    score: 5
   },
   {
     user_name: 'TimTheTatman', 

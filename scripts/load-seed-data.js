@@ -62,7 +62,7 @@ const ratings = [
     score: 5
   },
   {
-    user_name: 'TimThetatman', 
+    user_name: 'TimTheTatman', 
     score: 3
   },
   {

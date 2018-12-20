@@ -58,11 +58,11 @@ const profiles = [
 ];
 const ratings = [
   {
-    user_name: 'ninja', 
+    user_name: 'Ninja', 
     score: 5
   },
   {
-    user_name: 'timthetatman', 
+    user_name: 'TimThetatman', 
     score: 3
   },
   {
@@ -70,15 +70,11 @@ const ratings = [
     score: 4
   },
   {
-    user_name: 'tyler1', 
-    score: 2
-  },
-  {
-    user_name: 'lirik', 
+    user_name: 'LIRIK', 
     score: 4
   },
   {
-    user_name: 'yogscast', 
+    user_name: 'Yogscast', 
     score: 3
   },
   {
@@ -86,7 +82,7 @@ const ratings = [
     score: 1
   },
   {
-    user_name: 'tfue', 
+    user_name: 'Tfue', 
     score: 5
   },
   {

@@ -65,6 +65,7 @@ const ratings = [
     user_name: 'TimTheTatman', 
     score: 3
   },
+  {
     user_name: '72hrs', 
     score: Math.floor((Math.random() * 5) + 1)
   },

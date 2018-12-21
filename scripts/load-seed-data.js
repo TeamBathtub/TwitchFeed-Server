@@ -3,7 +3,6 @@ const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
 const favorites = [
-  { user_name: 'ninja', profile_id: 1 },
   { user_name: 'shroud', profile_id: 1 },
   { user_name: 'ZeRo', profile_id: 2 },
   { user_name: 'mistermv', profile_id: 2 },
@@ -16,18 +15,15 @@ const favorites = [
   { user_name: 'hexy', profile_id: 2 },
   { user_name: 'Gorgc', profile_id: 1 },
   { user_name: 'Rakin', profile_id: 1 },
-  { user_name: 'timthetatman', profile_id: 1 },
   { user_name: 'sodapoppin', profile_id: 1 },
   { user_name: 'DrDisrespect', profile_id: 1 },
   { user_name: 'littlesiha', profile_id: 1 },
-  { user_name: 'zeRo', profile_id: 1 },
   { user_name: 'cloakzy', profile_id: 1 },
   { user_name: 'DisguisedToast', profile_id: 1 },
   { user_name: 'Yogscast', profile_id: 1 },
   { user_name: 'Stray228', profile_id: 1 },
   { user_name: 'Yassuo', profile_id: 2 },
   { user_name: 'zilula2', profile_id: 2 },
-  { user_name: 'timthetatman', profile_id: 3 },
   { user_name: 'sodapoppin', profile_id: 2 },
   { user_name: 'DrDisrespect', profile_id: 3 },
   { user_name: 'zeRo', profile_id: 2 },

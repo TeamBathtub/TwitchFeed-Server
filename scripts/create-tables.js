@@ -1,7 +1,6 @@
 require('dotenv').config();
 const client = require('../lib/db-client');
 
-
 client.query(`
 
   CREATE TABLE IF NOT EXISTS profile (
@@ -11,6 +10,7 @@ client.query(`
     email VARCHAR(256),
     hash VARCHAR(256) NOT NULL
   );
+  
   CREATE TABLE IF NOT EXISTS favorite (
     id SERIAL PRIMARY KEY,
     user_name VARCHAR(256) NOT NULL,

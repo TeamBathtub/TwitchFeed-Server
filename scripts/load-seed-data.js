@@ -229,6 +229,7 @@ Promise.all(
       .then(result => result.rows[0]);
   })
 )
+
   .then(() => {
     return Promise.all(
       favorites.map(favorite => {
@@ -241,6 +242,7 @@ Promise.all(
       })
     );
   })
+
   .then(
     () => {
       return Promise.all(
@@ -254,6 +256,7 @@ Promise.all(
         })
       );
     })
+    
   .then(
     () => console.log('seed data load complete'),
     err => console.log(err)

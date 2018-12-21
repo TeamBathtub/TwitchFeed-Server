@@ -23,7 +23,6 @@ const favorites = [
   { user_name: 'Yogscast', profile_id: 1 },
   { user_name: 'Stray228', profile_id: 1 },
   { user_name: 'Yassuo', profile_id: 2 },
-  { user_name: 'zilula2', profile_id: 2 },
   { user_name: 'sodapoppin', profile_id: 2 },
   { user_name: 'DrDisrespect', profile_id: 3 },
   { user_name: 'zeRo', profile_id: 2 },

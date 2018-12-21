@@ -1,8 +1,8 @@
 require('dotenv').config();
 const client = require('../lib/db-client');
-const favorites = require('./favorites-seed-data');
-const profiles = require('./profiles-seed-data');
-const ratings = require('./ratings-seed-data');
+const favorites = require('./seed-data/favorites-seed-data');
+const profiles = require('./seed-data/profiles-seed-data');
+const ratings = require('./seed-data/ratings-seed-data');
 
 Promise.all(
   profiles.map(profile => {
